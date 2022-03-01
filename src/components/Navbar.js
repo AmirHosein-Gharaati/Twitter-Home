@@ -1,4 +1,6 @@
 import logo from "../assets/vectors/logo.svg";
+import profileLogo from "../assets/images/profile.png";
+import dots from "../assets/images/dots.png";
 
 const Navbar = () => {
   return (
@@ -67,16 +69,16 @@ const Navbar = () => {
         <button className="btn navbar__tweet">Tweet</button>
       </nav>
 
-      <div>
+      <div className="profile btn">
         {/* image */}
-        <div></div>
+        <img className="profile__logo" src={profileLogo} />
         {/* Data */}
-        <div>
-          <h3>Amirhosein Ghara...</h3>
+        <div className="profile__content">
+          <h5>Amirhosein Ghara...</h5>
           <span>@AG_1380</span>
         </div>
         {/* icon */}
-        <div></div>
+        <img className="profile__dots" src={dots} alt="more" />
       </div>
     </header>
   );
