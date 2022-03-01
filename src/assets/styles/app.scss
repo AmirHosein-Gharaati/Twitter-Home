@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+// variables
+@import "./variables.scss";
+
+// mixins
+@import "./mixins/btn.scss";
+
 // utils
 @import "./utils/container.scss";
 @import "./utils/button.scss";
@@ -9,4 +17,19 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }

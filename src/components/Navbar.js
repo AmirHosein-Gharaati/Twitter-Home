@@ -2,9 +2,9 @@ const Navbar = () => {
   return (
     <header className="nav">
       <nav>
-        <a className="btn" href="#home">
+        <button className="btn" href="#home">
           <img alt="twitter-icon" />
-        </a>
+        </button>
         <li>
           <i></i>
           <a href="#home">Home</a>
@@ -38,7 +38,7 @@ const Navbar = () => {
           <a href="#more">More</a>
         </li>
 
-        <button>Tweet</button>
+        <button className="btn">Tweet</button>
       </nav>
 
       <div>

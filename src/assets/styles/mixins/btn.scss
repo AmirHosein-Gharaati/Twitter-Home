@@ -1,0 +1,6 @@
+@mixin btn {
+  text-decoration: none;
+  padding: $padding-v $padding-h;
+  margin: $margin-v $margin-h;
+  border-radius: 25px;
+}

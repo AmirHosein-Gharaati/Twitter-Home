@@ -6,6 +6,24 @@
   justify-content: space-between;
   align-items: flex-end;
   height: 100vh;
-  max-width: 20%;
-  background-color: gray;
+  max-width: 25%;
+  background-color: burlywood;
+  padding: 0 $padding-h * 4;
+
+  nav {
+    li {
+      margin: $margin-v * 4 0;
+
+      a {
+        @include btn;
+        font-weight: 400;
+        font-size: 18px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: $white-gray;
+        }
+      }
+    }
+  }
 }
