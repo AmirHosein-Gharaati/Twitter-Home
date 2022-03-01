@@ -7,37 +7,61 @@ const Navbar = () => {
         <button className="btn navbar__icon" href="#home">
           <img src={logo} alt="twitter-icon" />
         </button>
+
         <li>
-          <i></i>
-          <a href="#home">Home</a>
+          <div className="navbar__item navbar__active btn">
+            <img src={logo} alt="logo" />
+            <a href="#home">Home</a>
+          </div>
         </li>
+
         <li>
-          <i></i>
-          <a href="#explore">Explore</a>
+          <div className="navbar__item btn">
+            <img src={logo} alt="logo" />
+            <a href="#explore">explore</a>
+          </div>
         </li>
+
         <li>
-          <i></i>
-          <a href="#notifications">Notifications</a>
+          <div className="navbar__item btn">
+            <img src={logo} alt="logo" />
+            <a href="#notifications">notifications</a>
+          </div>
         </li>
+
         <li>
-          <i></i>
-          <a href="#messages">Messages</a>
+          <div className="navbar__item btn">
+            <img src={logo} alt="logo" />
+            <a href="#messages">messages</a>
+          </div>
         </li>
+
         <li>
-          <i></i>
-          <a href="#bookmarks">Bookmarks</a>
+          <div className="navbar__item btn">
+            <img src={logo} alt="logo" />
+            <a href="#bookmarks">bookmarks</a>
+          </div>
         </li>
+
         <li>
-          <i></i>
-          <a href="#lists">Lists</a>
+          <div className="navbar__item btn">
+            <img src={logo} alt="logo" />
+            <a href="#lists">lists</a>
+          </div>
         </li>
+
         <li>
-          <i></i>
-          <a href="#profile">Profile</a>
+          <div className="navbar__item btn">
+            <img src={logo} alt="logo" />
+            <a href="#profile">profile</a>
+          </div>
         </li>
+
         <li>
-          <i></i>
-          <a href="#more">More</a>
+          <div className="navbar__item btn">
+            <img src={logo} alt="logo" />
+            <a href="#more">more</a>
+          </div>
         </li>
 
         <button className="btn navbar__tweet">Tweet</button>

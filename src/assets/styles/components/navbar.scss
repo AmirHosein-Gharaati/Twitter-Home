@@ -8,32 +8,44 @@
   height: 100vh;
   min-width: 100px;
   max-width: 416px;
-  padding: $padding-v * 2 $padding-h * 2;
+  padding: $padding-v $padding-h * 2;
   overflow-y: auto;
   border-right: 1px solid $white-gray;
 
   .navbar {
-    li {
-      margin-bottom: $margin-v * 3;
+    &__item {
+      display: flex;
+      align-items: center;
+      width: auto;
 
-      &:nth-last-child(2) {
-        margin: $margin-v * 2 0;
+      &:hover {
+        background-color: $white-gray;
       }
+    }
 
+    &__active {
       a {
-        @include btn;
+        font-weight: 600 !important;
+      }
+    }
+
+    li {
+      a {
         font-weight: 400;
         font-size: 18px;
         transition: all 0.3s ease;
+        margin-left: $margin-h;
+        text-transform: capitalize;
+      }
 
-        &:hover {
-          background-color: $white-gray;
-        }
+      img {
+        width: 32px;
+        height: 32px;
       }
     }
 
     &__icon {
-      margin-bottom: $margin-v * 2;
+      margin-bottom: $margin-v;
       background-color: white;
       display: flex;
       align-items: center;
