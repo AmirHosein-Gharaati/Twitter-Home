@@ -1,9 +1,11 @@
+import logo from "../assets/vectors/logo.svg";
+
 const Navbar = () => {
   return (
     <header className="nav">
       <nav className="navbar">
         <button className="btn navbar__icon" href="#home">
-          <img alt="twitter-icon" />
+          <img src={logo} alt="twitter-icon" />
         </button>
         <li>
           <i></i>
