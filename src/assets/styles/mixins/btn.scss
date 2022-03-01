@@ -3,4 +3,8 @@
   padding: $padding-v $padding-h;
   margin: $margin-v $margin-h;
   border-radius: 25px;
+  user-select: none;
+  position: relative;
+  border: none;
+  cursor: pointer;
 }

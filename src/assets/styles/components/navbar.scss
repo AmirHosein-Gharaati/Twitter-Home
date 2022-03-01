@@ -6,13 +6,19 @@
   justify-content: space-between;
   align-items: flex-end;
   height: 100vh;
-  max-width: 25%;
-  background-color: burlywood;
-  padding: 0 $padding-h * 4;
+  min-width: 100px;
+  max-width: 416px;
+  padding: $padding-v * 2 $padding-h * 2;
+  overflow-y: auto;
+  border-right: 1px solid $white-gray;
 
-  nav {
+  .navbar {
     li {
-      margin: $margin-v * 4 0;
+      margin-bottom: $margin-v * 3;
+
+      &:nth-last-child(2) {
+        margin: $margin-v * 2 0;
+      }
 
       a {
         @include btn;
@@ -23,6 +29,26 @@
         &:hover {
           background-color: $white-gray;
         }
+      }
+    }
+
+    &__icon {
+      margin-bottom: $margin-v * 2;
+      border-radius: 50%;
+    }
+
+    &__tweet {
+      background-color: $blue;
+      transition: all 0.3s ease;
+      color: white;
+      font-weight: 600;
+      font-size: 16px;
+      width: 216px;
+      height: 48px;
+      text-align: center;
+
+      &:hover {
+        background-color: $blue-dark;
       }
     }
   }

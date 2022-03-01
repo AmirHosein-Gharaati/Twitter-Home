@@ -1,8 +1,8 @@
 const Navbar = () => {
   return (
     <header className="nav">
-      <nav>
-        <button className="btn" href="#home">
+      <nav className="navbar">
+        <button className="btn navbar__icon" href="#home">
           <img alt="twitter-icon" />
         </button>
         <li>
@@ -38,7 +38,7 @@ const Navbar = () => {
           <a href="#more">More</a>
         </li>
 
-        <button className="btn">Tweet</button>
+        <button className="btn navbar__tweet">Tweet</button>
       </nav>
 
       <div>
@@ -46,7 +46,7 @@ const Navbar = () => {
         <div></div>
         {/* Data */}
         <div>
-          <h3>Amirhosein Gharaati</h3>
+          <h3>Amirhosein Ghara...</h3>
           <span>@AG_1380</span>
         </div>
         {/* icon */}
