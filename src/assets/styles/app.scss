@@ -1,0 +1,12 @@
+// utils
+@import "./utils/container.scss";
+@import "./utils/button.scss";
+
+// components
+@import "./components/navbar.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

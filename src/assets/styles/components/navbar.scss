@@ -1,0 +1,11 @@
+.nav {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100vh;
+  max-width: 20%;
+  background-color: gray;
+}
