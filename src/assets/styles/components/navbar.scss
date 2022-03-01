@@ -7,7 +7,7 @@
   align-items: flex-end;
   height: 100vh;
   min-width: 100px;
-  max-width: 416px;
+  max-width: 400px;
   padding: $padding-v $padding-h * 2;
   overflow-y: auto;
   border-right: 1px solid $white-gray;
@@ -29,19 +29,17 @@
       }
     }
 
-    li {
-      a {
-        font-weight: 400;
-        font-size: 18px;
-        transition: all 0.3s ease;
-        margin-left: $margin-h;
-        text-transform: capitalize;
-      }
+    a {
+      font-weight: 400;
+      font-size: 18px;
+      transition: all 0.3s ease;
+      margin-left: $margin-h;
+      text-transform: capitalize;
+    }
 
-      img {
-        width: 32px;
-        height: 32px;
-      }
+    img {
+      width: 32px;
+      height: 32px;
     }
 
     &__icon {
