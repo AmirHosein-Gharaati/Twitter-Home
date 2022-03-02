@@ -8,7 +8,7 @@ const Home = () => {
 
       {/* Add post */}
       <div className="add">
-        <div className="add__proifle">
+        <div className="add__profile">
           <img src={profileLogo} alt="profile" />
         </div>
         <div className="add__content">
