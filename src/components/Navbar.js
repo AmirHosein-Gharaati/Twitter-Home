@@ -71,7 +71,7 @@ const Navbar = () => {
 
       <div className="profile btn">
         {/* image */}
-        <img className="profile__logo" src={profileLogo} />
+        <img className="profile__logo" src={profileLogo} alt="logo"/>
         {/* Data */}
         <div className="profile__content">
           <h5>Amirhosein Ghara...</h5>
