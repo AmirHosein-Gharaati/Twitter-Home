@@ -11,6 +11,7 @@
   padding: $padding-v $padding-h * 2;
   overflow-y: auto;
   border-right: 1px solid $white-gray;
+  width: 30%;
 
   .navbar {
     &__item {

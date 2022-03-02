@@ -4,7 +4,7 @@ import dots from "../assets/images/dots.png";
 
 const Navbar = () => {
   return (
-    <header className="nav">
+    <div className="nav">
       <nav className="navbar">
         <button className="btn navbar__icon" href="#home">
           <img src={logo} alt="twitter-icon" />
@@ -80,7 +80,7 @@ const Navbar = () => {
         {/* icon */}
         <img className="profile__dots" src={dots} alt="more" />
       </div>
-    </header>
+    </div>
   );
 };
 
