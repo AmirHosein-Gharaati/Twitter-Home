@@ -2,7 +2,8 @@
   display: flex;
   margin: $margin-v * 2 0;
   width: 100%;
-  //   background-color: red;
+  border-bottom: 1px solid $white-gray;
+  padding: 0 $padding-h;
 
   &__profile {
     margin-right: $margin-h;
