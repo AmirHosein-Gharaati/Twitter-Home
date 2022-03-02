@@ -12,4 +12,11 @@
   &:hover {
     background-color: $white-gray;
   }
+
+  &-disabled {
+    opacity: 0.5;
+    &:hover {
+      cursor: default;
+    }
+  }
 }
