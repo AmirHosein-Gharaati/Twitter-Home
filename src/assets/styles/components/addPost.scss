@@ -1,7 +1,8 @@
 .add {
   display: flex;
   margin: $margin-v * 2 0;
-  max-width: 100%;
+  width: 100%;
+  background-color: red;
 
   &__profile {
     margin-right: $margin-h;
@@ -16,13 +17,21 @@
 
   &__content {
     padding: $padding-v * 2 0;
+    width: 100%;
 
     textarea {
       border: none;
-      border-radius: 25px;
       outline: none;
-      padding: $padding-v/2 $padding-h;
+      resize: none;
+      padding: 0 $padding-h;
       width: 100%;
+      font-size: 18px;
+
+      &::-webkit-input-placeholder {
+        color: gray;
+        font-size: 18px;
+        font-family: inherit;
+      }
     }
   }
 }
