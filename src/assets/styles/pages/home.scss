@@ -8,7 +8,12 @@
   display: flex;
   flex-direction: column;
   border-right: 1px solid $white-gray;
-  padding: $padding-v * 2 $padding-h;
+  padding: $padding-v * 4 $padding-h;
   width: 50%;
   background-color: $white-gray;
+
+  &__title {
+    font-weight: 600;
+    font-size: 20px;
+  }
 }
