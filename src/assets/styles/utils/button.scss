@@ -1,3 +1,15 @@
 .btn {
-  @include btn;
+  text-decoration: none;
+  padding: $padding-v $padding-h;
+  margin: $margin-v $margin-h;
+  border-radius: 25px;
+  user-select: none;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $white-gray;
+  }
 }

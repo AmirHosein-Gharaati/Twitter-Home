@@ -71,4 +71,19 @@
       }
     }
   }
+
+  &__button {
+    background-color: $blue;
+    transition: all 0.3s ease;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+
+    &:hover {
+      background-color: $blue-dark;
+    }
+  }
 }

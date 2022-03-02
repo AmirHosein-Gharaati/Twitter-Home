@@ -36,7 +36,7 @@ const Home = () => {
               </button>
             </div>
             <div className="add__button-wrapper">
-              <button className="add__button">Tweet</button>
+              <button className="add__button btn">Tweet</button>
             </div>
           </div>
         </div>
