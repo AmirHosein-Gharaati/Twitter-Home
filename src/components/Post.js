@@ -1,4 +1,10 @@
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import {
+  faHeart,
+  faComment,
+  faRetweet,
+  faShare,
+  faBars,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Post = ({
@@ -20,7 +26,7 @@ const Post = ({
     <div className="post">
       <div className="post-wrapper">
         <div className="post__reason">
-          <FontAwesomeIcon icon={faCoffee} />
+          <FontAwesomeIcon icon={faComment} />
           <span className="post__reason__person">{reasonFromPerson}</span>
           <span className="post__reason__action">{reason}</span>
         </div>
@@ -42,7 +48,7 @@ const Post = ({
                 <span className="post__info__time">{time}</span>
               </div>
               <button className="btn">
-                <FontAwesomeIcon icon={faCoffee} />
+                <FontAwesomeIcon icon={faBars} />
               </button>
             </div>
 
@@ -59,28 +65,28 @@ const Post = ({
             <div className="post__buttons">
               <div className="post__buttons-wrapper">
                 <button className="btn">
-                  <FontAwesomeIcon icon={faCoffee} />
+                  <FontAwesomeIcon icon={faComment} />
                 </button>
                 {replyCount !== 0 && <span>{replyCount}</span>}
               </div>
 
               <div className="post__buttons-wrapper">
                 <button className="btn">
-                  <FontAwesomeIcon icon={faCoffee} />
+                  <FontAwesomeIcon icon={faRetweet} />
                 </button>
                 {retweetCount !== 0 && <span>{retweetCount}</span>}
               </div>
 
               <div className="post__buttons-wrapper">
                 <button className="btn">
-                  <FontAwesomeIcon icon={faCoffee} />
+                  <FontAwesomeIcon icon={faHeart} />
                 </button>
                 {likeCount !== 0 && <span>{likeCount}</span>}
               </div>
 
               <div className="post__buttons-wrapper">
                 <button className="btn">
-                  <FontAwesomeIcon icon={faCoffee} />
+                  <FontAwesomeIcon icon={faShare} />
                 </button>
                 {shareCount !== 0 && <span>{shareCount}</span>}
               </div>
