@@ -1,6 +1,16 @@
 import logo from "../assets/vectors/logo.svg";
 import profileLogo from "../assets/images/profile.png";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faImage,
+  faGift,
+  faPoll,
+  faSmile,
+  faCalendar,
+  faMap,
+} from "@fortawesome/free-solid-svg-icons";
+
 const AddPost = () => {
   return (
     <div className="add">
@@ -13,22 +23,22 @@ const AddPost = () => {
         <div className="add__icons-wrapper">
           <div className="add__icons">
             <button className="btn">
-              <img src={logo} alt="logo" />
+              <FontAwesomeIcon icon={faImage} />
             </button>
             <button className="btn">
-              <img src={logo} alt="logo" />
+              <FontAwesomeIcon icon={faGift} />
             </button>
             <button className="btn">
-              <img src={logo} alt="logo" />
+              <FontAwesomeIcon icon={faPoll} />
             </button>
             <button className="btn">
-              <img src={logo} alt="logo" />
+              <FontAwesomeIcon icon={faSmile} />
             </button>
             <button className="btn">
-              <img src={logo} alt="logo" />
+              <FontAwesomeIcon icon={faCalendar} />
             </button>
             <button className="btn">
-              <img src={logo} alt="logo" />
+              <FontAwesomeIcon icon={faMap} />
             </button>
           </div>
           <div className="add__button-wrapper">
