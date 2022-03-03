@@ -1,4 +1,3 @@
-import logo from "../assets/vectors/logo.svg";
 import profileLogo from "../assets/images/profile.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
