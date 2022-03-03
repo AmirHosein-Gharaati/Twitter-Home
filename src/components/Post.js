@@ -1,27 +1,45 @@
-import profileLogo from "../assets/images/profile.png";
-
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const Post = () => {
+const Post = ({
+  reasonFromPerson,
+  reason,
+  personImage,
+  personName,
+  personId,
+  time,
+  text,
+  imageUrl = "",
+  replyCount = 0,
+  retweetCount = 0,
+  likeCount = 0,
+  shareCount = 0,
+  hasComment = false,
+}) => {
   return (
     <div className="post">
       <div className="post-wrapper">
         <div className="post__reason">
           <FontAwesomeIcon icon={faCoffee} />
-          <span className="post__reason__person">Hosein Mirhoseini</span>
-          <span className="post__reason__action">liked</span>
+          <span className="post__reason__person">{reasonFromPerson}</span>
+          <span className="post__reason__action">{reason}</span>
         </div>
         <div className="post__main">
           <div className="post__profile">
-            <img src={profileLogo} alt="profile" />
+            <img src={personImage} alt="profile" />
           </div>
-          <div className="post__content">
+          <div
+            className={
+              hasComment
+                ? "post__content"
+                : "post__content post__content__hide-line"
+            }
+          >
             <div className="post__info-wrapper">
               <div className="post__info">
-                <h4>Mohsen Tahmasebi</h4>
-                <span className="post__info__id">@moh53n . </span>
-                <span className="post__info__time">11h</span>
+                <h4>{personName}</h4>
+                <span className="post__info__id">{personId} . </span>
+                <span className="post__info__time">{time}</span>
               </div>
               <button className="btn">
                 <FontAwesomeIcon icon={faCoffee} />
@@ -29,55 +47,48 @@ const Post = () => {
             </div>
 
             <div className="post__text">
-              <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English.
-              </p>
+              <p>{text}</p>
             </div>
 
-            <div className="post__image">
-              <img
-                src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
-                alt="logo"
-              />
-            </div>
+            {imageUrl !== "" && (
+              <div className="post__image">
+                <img src={imageUrl} alt="logo" />
+              </div>
+            )}
 
             <div className="post__buttons">
               <div className="post__buttons-wrapper">
                 <button className="btn">
                   <FontAwesomeIcon icon={faCoffee} />
                 </button>
-                <span>2</span>
+                {replyCount !== 0 && <span>{replyCount}</span>}
               </div>
 
               <div className="post__buttons-wrapper">
                 <button className="btn">
                   <FontAwesomeIcon icon={faCoffee} />
                 </button>
-                <span>2</span>
+                {retweetCount !== 0 && <span>{retweetCount}</span>}
               </div>
 
               <div className="post__buttons-wrapper">
                 <button className="btn">
                   <FontAwesomeIcon icon={faCoffee} />
                 </button>
-                <span>2</span>
+                {likeCount !== 0 && <span>{likeCount}</span>}
               </div>
 
               <div className="post__buttons-wrapper">
                 <button className="btn">
                   <FontAwesomeIcon icon={faCoffee} />
                 </button>
-                <span>2</span>
+                {shareCount !== 0 && <span>{shareCount}</span>}
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="post__end"></div>
+      {hasComment === false && <div className="post__end"></div>}
     </div>
   );
 };

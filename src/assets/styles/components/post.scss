@@ -56,6 +56,13 @@
     padding: 0 $padding-h * 1.5;
     position: relative;
 
+    &__hide-line {
+      &::before {
+        content: "";
+        display: none !important;
+      }
+    }
+
     &::before {
       content: "";
       position: absolute;
