@@ -5,11 +5,11 @@ import dots from "../assets/images/dots.png";
 const Navbar = () => {
   return (
     <div className="nav">
-      <nav className="navbar">
-        <button className="btn navbar__icon" href="#home">
-          <img src={logo} alt="twitter-icon" />
-        </button>
+      {/* <button className="btn nav__icon" href="#home">
+        <img src={logo} alt="twitter-icon" />
+      </button> */}
 
+      <nav className="navbar">
         <li>
           <div className="navbar__item navbar__active btn">
             <img src={logo} alt="logo" />
@@ -71,7 +71,7 @@ const Navbar = () => {
 
       <div className="profile btn">
         {/* image */}
-        <img className="profile__logo" src={profileLogo} alt="logo"/>
+        <img className="profile__logo" src={profileLogo} alt="logo" />
         {/* Data */}
         <div className="profile__content">
           <h5>Amirhosein Ghara...</h5>

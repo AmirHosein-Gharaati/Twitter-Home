@@ -13,11 +13,32 @@
   border-right: 1px solid $white-gray;
   width: 30%;
 
+  &__icon {
+    margin-bottom: $margin-v;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 30px;
+
+    &:hover {
+      background-color: $blue-light;
+    }
+
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
   .navbar {
+    display: flex;
+    flex-direction: column;
+
     &__item {
       display: flex;
       align-items: center;
-      width: auto;
     }
 
     &__active {
@@ -37,25 +58,6 @@
     img {
       width: 32px;
       height: 32px;
-    }
-
-    &__icon {
-      margin-bottom: $margin-v;
-      background-color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 12px;
-      border-radius: 30px;
-
-      &:hover {
-        background-color: $blue-light;
-      }
-
-      img {
-        width: 32px;
-        height: 32px;
-      }
     }
 
     &__tweet {
@@ -100,5 +102,26 @@
     margin-left: $margin-h;
     width: 18px;
     height: 18px;
+  }
+}
+
+@media screen and (max-width: $bp-medium) {
+  .nav {
+    width: 15%;
+
+    .navbar {
+      align-items: center;
+
+      &__item {
+        a {
+          display: none;
+        }
+      }
+
+      &__tweet {
+        width: 50px;
+        height: 50px;
+      }
+    }
   }
 }
