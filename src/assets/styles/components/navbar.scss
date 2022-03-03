@@ -124,4 +124,11 @@
       }
     }
   }
+
+  .profile {
+    &__content,
+    &__dots {
+      display: none !important;
+    }
+  }
 }
