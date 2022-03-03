@@ -55,6 +55,7 @@
   &__content {
     padding: 0 $padding-h * 1.5;
     position: relative;
+    width: 100%;
 
     &__hide-line {
       &::before {
