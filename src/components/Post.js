@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Post = ({
   reasonFromPerson,
-  reason,
+  reason="",
   personImage,
   personName,
   personId,
@@ -25,11 +25,14 @@ const Post = ({
   return (
     <div className="post">
       <div className="post-wrapper">
-        <div className="post__reason">
-          <FontAwesomeIcon icon={faComment} />
-          <span className="post__reason__person">{reasonFromPerson}</span>
-          <span className="post__reason__action">{reason}</span>
-        </div>
+        {reason && reasonFromPerson && (
+          <div className="post__reason">
+            <FontAwesomeIcon icon={faComment} />
+            <span className="post__reason__person">{reasonFromPerson}</span>
+            <span className="post__reason__action">{reason}</span>
+          </div>
+        )}
+
         <div className="post__main">
           <div className="post__profile">
             <img src={personImage} alt="profile" />
