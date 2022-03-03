@@ -94,10 +94,18 @@
     }
   }
 
+  &__text {
+    padding-bottom: $padding-v * 2;
+    p {
+      font-size: 14px;
+    }
+  }
+
   &__image {
     img {
-      width: 24px;
-      height: 24px;
+      border-radius: 18px;
+      width: 100%;
+      height: auto;
     }
   }
 }
