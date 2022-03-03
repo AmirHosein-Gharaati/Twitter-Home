@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   padding: $padding-v $padding-h;
+  width: 100%;
 
   &__reason {
     display: flex;
@@ -11,13 +12,13 @@
 
     svg {
       margin-right: $margin-h;
-      color: rgb(83, 100, 113);
+      color: $gray;
     }
 
     span {
       font-weight: 600;
       font-size: 12px;
-      color: rgb(83, 100, 113);
+      color: $gray;
     }
 
     &__person {
@@ -47,6 +48,56 @@
       z-index: 2;
       background-color: $white-gray;
       margin-top: $margin-v;
+    }
+  }
+
+  &__content {
+    padding: 0 $padding-h * 1.5;
+  }
+
+  &__info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      padding: 8px !important;
+      margin: 0 !important;
+      background-color: transparent;
+
+      &:hover {
+        background-color: $blue-light;
+        color: $blue-dark;
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+
+    h4 {
+      font-size: 15px;
+      margin-right: $margin-h/2;
+      font-weight: 600;
+    }
+
+    &__id,
+    &__time {
+      font-size: 14px;
+      font-weight: 400;
+      color: $gray;
+    }
+
+    &__id {
+      margin-right: 2px;
+    }
+  }
+
+  &__image {
+    img {
+      width: 24px;
+      height: 24px;
     }
   }
 }

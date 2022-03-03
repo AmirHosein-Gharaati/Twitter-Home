@@ -29,11 +29,11 @@ const Home = () => {
             <div className="post__info-wrapper">
               <div className="post__info">
                 <h4>Mohsen Tahmasebi</h4>
-                <span className="post__id">@moh53n . </span>
-                <span className="post__time">11h</span>
+                <span className="post__info__id">@moh53n . </span>
+                <span className="post__info__time">11h</span>
               </div>
               <button className="btn">
-                <img src={dots} alt="more" />
+                <FontAwesomeIcon icon={faCoffee} />
               </button>
             </div>
 
