@@ -1,5 +1,4 @@
 import AddPost from "../components/AddPost";
-import dots from "../assets/images/dots.png";
 import profileLogo from "../assets/images/profile.png";
 import logo from "../assets/vectors/logo.svg";
 
