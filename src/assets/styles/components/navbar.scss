@@ -14,7 +14,7 @@
   width: 30%;
 
   &__icon {
-    margin-bottom: $margin-v;
+    margin: 0;
     background-color: white;
     display: flex;
     align-items: center;
@@ -39,11 +39,22 @@
     &__item {
       display: flex;
       align-items: center;
+      margin: $margin-v/2 0;
+
+      svg {
+        width: 25px;
+        height: 25px;
+        color: gray;
+      }
     }
 
     &__active {
       a {
         font-weight: 600 !important;
+      }
+
+      svg {
+        color: black;
       }
     }
 
@@ -69,9 +80,15 @@
       width: 216px;
       height: 50px;
       text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       &:hover {
         background-color: $blue-dark;
+      }
+      svg {
+        display: none;
       }
     }
   }
@@ -121,6 +138,14 @@
       &__tweet {
         width: 50px;
         height: 50px;
+
+        span {
+          display: none;
+        }
+
+        svg {
+          display: block;
+        }
       }
     }
   }
