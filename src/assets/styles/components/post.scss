@@ -49,19 +49,23 @@
       height: 50px;
       border-radius: 50%;
     }
-
-    &__comment-line {
-      width: 2px;
-      height: calc(100% + 50px);
-      overflow-y: visible;
-      z-index: 2;
-      background-color: $white-gray;
-      margin-top: $margin-v;
-    }
   }
 
   &__content {
     padding: 0 $padding-h * 1.5;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $white-gray;
+      left: -26px;
+      top: 0;
+      width: 2px;
+      height: calc(100% + 10px);
+      z-index: 10;
+      margin-top: $margin-v;
+    }
   }
 
   &__info-wrapper {
