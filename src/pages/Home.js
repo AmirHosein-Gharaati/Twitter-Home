@@ -55,29 +55,29 @@ const Home = () => {
 
             <div className="post__buttons">
               <div className="post__buttons-wrapper">
-                <button>
-                  <img src={logo} alt="logo" />
+                <button className="btn">
+                  <FontAwesomeIcon icon={faCoffee} />
                 </button>
                 <span>2</span>
               </div>
 
               <div className="post__buttons-wrapper">
-                <button>
-                  <img src={logo} alt="logo" />
+                <button className="btn">
+                  <FontAwesomeIcon icon={faCoffee} />
                 </button>
                 <span>2</span>
               </div>
 
               <div className="post__buttons-wrapper">
-                <button>
-                  <img src={logo} alt="logo" />
+                <button className="btn">
+                  <FontAwesomeIcon icon={faCoffee} />
                 </button>
                 <span>2</span>
               </div>
 
               <div className="post__buttons-wrapper">
-                <button>
-                  <img src={logo} alt="logo" />
+                <button className="btn">
+                  <FontAwesomeIcon icon={faCoffee} />
                 </button>
                 <span>2</span>
               </div>

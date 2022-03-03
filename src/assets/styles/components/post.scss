@@ -108,4 +108,38 @@
       height: auto;
     }
   }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-wrapper {
+      position: relative;
+
+      button {
+        padding: 8px !important;
+        margin: 0 !important;
+        background-color: transparent;
+      }
+
+      button,
+      span {
+        color: $gray;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        button {
+          background-color: $blue-light;
+          color: $blue-dark;
+        }
+
+        span {
+          color: $blue-dark;
+        }
+      }
+    }
+  }
 }
