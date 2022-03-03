@@ -1,0 +1,26 @@
+.post {
+  display: flex;
+  flex-direction: column;
+  padding: $padding-v $padding-h;
+
+  &__reason {
+    display: flex;
+    align-items: center;
+    margin-left: $margin-h*3;
+
+    svg {
+      margin-right: $margin-h;
+      color: rgb(83, 100, 113);
+    }
+
+    span {
+      font-weight: 600;
+      font-size: 12px;
+      color: rgb(83, 100, 113);
+    }
+
+    &__person {
+      margin-right: 4px;
+    }
+  }
+}
