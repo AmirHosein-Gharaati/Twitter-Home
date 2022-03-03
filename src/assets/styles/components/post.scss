@@ -63,7 +63,7 @@
       left: -26px;
       top: 0;
       width: 2px;
-      height: calc(100% + 10px);
+      height: calc(100% + $padding-v * 4);
       z-index: 2;
       margin-top: $margin-v;
     }
