@@ -1,8 +1,17 @@
 .post {
   display: flex;
   flex-direction: column;
-  padding: $padding-v $padding-h;
   width: 100%;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $white-gray;
+    cursor: pointer;
+  }
+
+  &-wrapper {
+    padding: $padding-v $padding-h;
+  }
 
   &__reason {
     display: flex;
@@ -141,5 +150,11 @@
         }
       }
     }
+  }
+
+  &__end {
+    height: 2px;
+    background-color: $white-gray;
+    width: 100%;
   }
 }
