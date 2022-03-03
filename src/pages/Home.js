@@ -23,7 +23,7 @@ const Home = () => {
         <div className="post__main">
           <div className="post__profile">
             <img src={profileLogo} alt="profile" />
-            <div className="post__comment-line"></div>
+            <div className="post__profile__comment-line"></div>
           </div>
           <div className="post__content">
             <div className="post__info-wrapper">

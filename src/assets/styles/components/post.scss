@@ -6,7 +6,8 @@
   &__reason {
     display: flex;
     align-items: center;
-    margin-left: $margin-h*3;
+    margin-left: $margin-h * 3;
+    margin-bottom: $margin-v/2;
 
     svg {
       margin-right: $margin-h;
@@ -21,6 +22,31 @@
 
     &__person {
       margin-right: 4px;
+    }
+  }
+
+  &__main {
+    display: flex;
+  }
+
+  &__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    &__comment-line {
+      width: 2px;
+      height: calc(100% + 50px);
+      overflow-y: visible;
+      z-index: 2;
+      background-color: $white-gray;
+      margin-top: $margin-v;
     }
   }
 }
