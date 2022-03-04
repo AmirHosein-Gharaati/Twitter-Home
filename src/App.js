@@ -13,6 +13,7 @@ function App() {
 
         {/* Right Side */}
         <div className="right-side">
+          
           <div className="right-side__search-wrapper">
             <div className="right-side__search">
               <input placeholder="Search Twitter" />
@@ -21,7 +22,7 @@ function App() {
             </div>
           </div>
 
-          {/* <div className="right-side__content">
+          <div className="right-side__content">
 
             <div className="right-side__box">
               <h2 className="right-side__box__title">What's happening</h2>
@@ -46,7 +47,7 @@ function App() {
 
             </div>
 
-            <div className="right-side__box">
+            {/* <div className="right-side__box">
               <h2 className="right-side__box__title">Who to follow</h2>
 
               <div className="right-side__item">
@@ -75,8 +76,8 @@ function App() {
                 </div>
               </div>
 
-            </div>
-          </div> */}
+            </div> */}
+          </div>
         </div>
       </div>
     </div>
