@@ -6,10 +6,11 @@ import {
   faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import profileLogo from "../assets/images/profile.png";
 
 const Post = ({
   reasonFromPerson,
-  reason="",
+  reason = "",
   personImage,
   personName,
   personId,
@@ -35,7 +36,7 @@ const Post = ({
 
         <div className="post__main">
           <div className="post__profile">
-            <img src={personImage} alt="profile" />
+            <img src={personImage ? personImage : profileLogo} alt="profile" />
           </div>
           <div
             className={
