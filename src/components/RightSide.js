@@ -1,13 +1,46 @@
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import SearchResult from "./SearchResult";
 
 const RightSide = ({ dummyData }) => {
   const defaultText = "Try searching for people, topics, or keywords";
   const notFoundText = "Nothing found";
 
+  const data = dummyData;
+
   const [results, setResults] = useState([]);
   const [serachInput, setSearchInput] = useState("");
+
+  const checkMatch = (post, inputValue) => {
+    if (!inputValue) return false;
+
+    const val = inputValue.toLowerCase();
+    if (
+      post.personName.toLowerCase().includes(val) ||
+      post.personId.toLowerCase().includes(val)
+    ) {
+      return true;
+    }
+
+    return false;
+  };
+
+  useEffect(() => {
+    let res = [];
+    for (const post of data) {
+      if (checkMatch(post, serachInput)) {
+        res.push({
+          image: post.personImage,
+          personName: post.personName,
+          personId: post.personId,
+          personBio: "dummy bio",
+        });
+      }
+    }
+
+    setResults(res);
+  }, [data, serachInput]);
 
   return (
     <div className="right-side">
@@ -23,6 +56,20 @@ const RightSide = ({ dummyData }) => {
             <span>
               {serachInput ? (results.length ? "" : notFoundText) : defaultText}
             </span>
+
+            {results.length > 0
+              ? results.map((element, resIndex) => {
+                  return (
+                    <SearchResult
+                      key={resIndex}
+                      image={element.image}
+                      personName={element.personName}
+                      personId={element.personId}
+                      personBio={element.personBio}
+                    />
+                  );
+                })
+              : ""}
 
             {/* <div className="search__results__item">
               <div className="search__results__item__image">
