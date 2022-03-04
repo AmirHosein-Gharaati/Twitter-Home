@@ -15,10 +15,10 @@ function App() {
         {/* Right Side */}
         <div className="right-side">
           <div className="right-side__search-wrapper">
-            <div className="right-side__search">
+            <div className="search">
               <input placeholder="Search Twitter" />
               <FontAwesomeIcon icon={faMagnifyingGlass} />
-              <div className="right-side__search__results"></div>
+              <div className="search__results"></div>
             </div>
           </div>
 
