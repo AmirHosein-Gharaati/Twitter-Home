@@ -40,6 +40,7 @@
 @media screen and (max-width: $bp-x-small) {
   .home {
     width: 100% !important;
+    padding-bottom: $padding-v * 15;
 
     &__title-wrapper {
       display: none;
