@@ -1,15 +1,28 @@
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 
 const RightSide = ({ dummyData }) => {
+  const defaultText = "Try searching for people, topics, or keywords";
+  const notFoundText = "Nothing found";
+
+  const [results, setResults] = useState([]);
+  const [serachInput, setSearchInput] = useState("");
+
   return (
     <div className="right-side">
       <div className="right-side__search-wrapper">
         <div className="search">
-          <input placeholder="Search Twitter" />
+          <input
+            value={serachInput}
+            onChange={(e) => setSearchInput(e.target.value)}
+            placeholder="Search Twitter"
+          />
           <FontAwesomeIcon icon={faMagnifyingGlass} />
           <div className="search__results">
-            <span>Try searching for people, topics, or keywords</span>
+            <span>
+              {serachInput ? (results.length ? "" : notFoundText) : defaultText}
+            </span>
 
             {/* <div className="search__results__item">
               <div className="search__results__item__image">
