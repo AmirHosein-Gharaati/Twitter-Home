@@ -1,12 +1,55 @@
 .right-side {
-  width: calc(100% - $home-main-size);
+  width: calc(100% - $home-main-size - 15%);
   height: 100%;
-  background-color: rgb(255, 147, 147);
+  margin-left: $margin-h * 2;
+
+  &__search-wrapper {
+    width: 100%;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    backdrop-filter: blur(10px);
+    padding: $padding-v 0;
+  }
 
   &__search {
-    padding: $padding-v * 2 $padding-h;
-    background-color: green;
-    width: 50%;
+    position: relative;
+
+    input {
+      width: 100%;
+      height: 44px;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+      background-color: $white-gray;
+      outline: none;
+      padding-left: $padding-h * 5;
+      color: $gray;
+      font-weight: 500;
+      font-size: 14px;
+      border: none;
+
+      &::-webkit-input-placeholder {
+        color: gray;
+        font-size: 14px;
+        font-family: inherit;
+      }
+
+      &:focus {
+        background-color: white;
+        border: 1px solid $blue;
+        ~ svg {
+          color: $blue;
+        }
+      }
+    }
+
+    svg {
+      position: absolute;
+      left: $padding-h * 2;
+      top: 14px;
+      color: $gray;
+    }
   }
 }
 

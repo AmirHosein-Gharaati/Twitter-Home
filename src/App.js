@@ -1,17 +1,26 @@
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 function App() {
   return (
     <div>
       <Navbar />
       <div className="main">
         <Home />
+
+        {/* Right Side */}
         <div className="right-side">
-          <div className="right-side__search">
-            <textarea placeholder="Search Twitter" />
-            <div className="right-side__search__results"></div>
+          <div className="right-side__search-wrapper">
+            <div className="right-side__search">
+              <input placeholder="Search Twitter" />
+              <FontAwesomeIcon icon={faMagnifyingGlass} />
+              <div className="right-side__search__results"></div>
+            </div>
           </div>
+
           {/* <div className="right-side__content">
 
             <div className="right-side__box">
