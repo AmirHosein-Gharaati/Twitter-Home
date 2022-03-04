@@ -13,7 +13,7 @@ function App() {
 
         {/* Right Side */}
         <div className="right-side">
-          
+
           <div className="right-side__search-wrapper">
             <div className="right-side__search">
               <input placeholder="Search Twitter" />
@@ -29,7 +29,7 @@ function App() {
 
               <div className="right-side__item">
                 <div className="right-side__item__content">
-                  <span className="right-side__item__id">
+                  <span className="right-side__item__title">
                     Ukraine conflict · LIVE
                   </span>
                   <p>
