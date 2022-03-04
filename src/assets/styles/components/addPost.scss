@@ -24,7 +24,6 @@
       border: none;
       outline: none;
       resize: none;
-      padding: 0 $padding-h;
       width: 100%;
       font-size: 18px;
 
@@ -45,6 +44,7 @@
   &__line {
     display: none;
     width: 100%;
+    min-width: 200px;
     height: 1px;
     background-color: $blue-light;
     margin: $margin-v 0;
@@ -93,5 +93,22 @@
     &:hover {
       background-color: $blue-dark;
     }
+  }
+}
+
+
+@media screen and (max-width: $bp-medium) {
+  .add {
+    &__content {
+      textarea{
+        padding: 0;
+        width: 80%;
+      }
+    }
+    
+    &__line{
+      width: 80%;
+    }
+    
   }
 }
