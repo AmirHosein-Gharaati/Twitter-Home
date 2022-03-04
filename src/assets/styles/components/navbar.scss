@@ -6,12 +6,12 @@
   justify-content: space-between;
   align-items: flex-end;
   height: 100vh;
-  min-width: 100px;
-  max-width: 400px;
   padding: $padding-v $padding-h * 2;
   overflow-y: auto;
   border-right: 1px solid $white-gray;
-  width: 30%;
+  position: fixed;
+  width: $navbar-width;
+  min-width: $nav-bar-minimum;
 
   &__icon {
     margin: 0;
@@ -124,7 +124,7 @@
 
 @media screen and (max-width: $bp-medium) {
   .nav {
-    width: 15%;
+    width: $navbar-width-small;
 
     .navbar {
       align-items: center;

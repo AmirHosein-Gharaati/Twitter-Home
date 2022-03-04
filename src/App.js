@@ -3,9 +3,11 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="main">
+    <div>
       <Navbar />
-      <Home />
+      <div className="main">
+        <Home />
+      </div>
     </div>
   );
 }
