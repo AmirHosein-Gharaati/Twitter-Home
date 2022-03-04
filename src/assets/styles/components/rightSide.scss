@@ -96,6 +96,10 @@
       ~ svg {
         color: $blue;
       }
+
+      ~ div {
+        display: block;
+      }
     }
   }
 
@@ -107,6 +111,7 @@
   }
 
   &__results {
+    display: none;
     position: absolute;
     top: 48px;
     left: -10px;
@@ -133,7 +138,7 @@
     &__item {
       display: flex;
       align-items: center;
-      padding: $padding-v*2 $padding-h/2;
+      padding: $padding-v * 2 $padding-h/2;
       min-height: 80px;
 
       &:hover {
