@@ -96,19 +96,29 @@
   }
 }
 
-
 @media screen and (max-width: $bp-medium) {
   .add {
     &__content {
-      textarea{
+      textarea {
         padding: 0;
         width: 80%;
       }
     }
-    
-    &__line{
+
+    &__line {
       width: 80%;
     }
-    
+  }
+}
+
+@media screen and(max-width: $bp-small) {
+  .add {
+    &__icons {
+      button {
+        &:nth-child(5) {
+          display: none;
+        }
+      }
+    }
   }
 }
