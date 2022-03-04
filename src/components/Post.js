@@ -11,7 +11,7 @@ import profileLogo from "../assets/images/profile.png";
 const Post = ({
   reasonFromPerson = "No One",
   reason = "",
-  personImage = { profileLogo },
+  personImage,
   personName = "No One",
   personId = "@HICHKAS",
   time = "now",

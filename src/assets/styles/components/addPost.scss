@@ -33,11 +33,11 @@
         font-family: inherit;
       }
 
-      &:focus {
-        + div {
-          display: block;
-        }
-      }
+      // &:focus {
+      //   + div {
+      //     display: block;
+      //   }
+      // }
     }
   }
 
