@@ -11,12 +11,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: $padding-v * 2 $padding-h;
+    padding: $padding-v $padding-h;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(10px);
 
     svg {
       padding: $padding-v;
       color: $gray;
-      
+
       &:hover {
         background-color: $white-gray;
         border-radius: 50%;
@@ -25,16 +31,9 @@
   }
 
   &__title {
-    position: sticky;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    right: 0;
     width: 100%;
     font-weight: 600;
     font-size: 20px;
-
-    backdrop-filter: blur(10px);
   }
 }
 
