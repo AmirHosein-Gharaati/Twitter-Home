@@ -152,6 +152,7 @@
   }
 
   .profile {
+    padding: $padding-h/2;
     &__content,
     &__dots {
       display: none !important;
