@@ -20,3 +20,10 @@
     backdrop-filter: blur(10px);
   }
 }
+
+
+@media screen and (max-width: $bp-x-small) {
+  .home {
+    width: 100% !important;
+  }
+}

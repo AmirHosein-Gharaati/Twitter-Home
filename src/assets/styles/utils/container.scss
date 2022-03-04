@@ -1,7 +1,7 @@
 .main {
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 10vh;
   margin-left: $navbar-width;
 }
 
@@ -16,5 +16,11 @@
 @media screen and(max-width: $bp-medium) {
   .main {
     margin-left: $navbar-width-small;
+  }
+}
+
+@media screen and (max-width: $bp-x-small) {
+  .main {
+    margin-left: 0;
   }
 }
