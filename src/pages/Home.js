@@ -4,12 +4,9 @@ import Post from "../components/Post";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
-import dummyData from "../data/data.json";
 
-const Home = () => {
+const Home = ({dummyData}) => {
   const [data, setData] = useState(dummyData);
-
-  console.log(data);
 
   return (
     <div className="home">
