@@ -13,6 +13,10 @@
   align-items: center !important;
 }
 
+.rounded {
+  border-radius: 50%;
+}
+
 @media screen and(max-width: $bp-medium) {
   .main {
     margin-left: $navbar-width-small;
