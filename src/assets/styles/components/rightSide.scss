@@ -77,6 +77,10 @@
       cursor: pointer;
     }
 
+    &__content {
+      padding-right: $padding-h;
+    }
+
     &__title {
       font-size: 12px;
       font-weight: 500;
