@@ -10,8 +10,10 @@
   overflow-y: auto;
   border-right: 1px solid $white-gray;
   position: fixed;
+  left: 0;
   width: $navbar-width;
   min-width: $nav-bar-minimum;
+  z-index: 10;
 
   &__icon {
     margin: 0 !important;
@@ -83,6 +85,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      
 
       &:hover {
         background-color: $blue-dark;
@@ -158,5 +161,51 @@
     &__dots {
       display: none !important;
     }
+  }
+}
+
+@media screen and (max-width: $bp-x-small) {
+  .nav {
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    flex-direction: row;
+    padding: 0;
+    border-right: none !important;
+    z-index: 100 !important;
+    border-top: 2px solid $white-gray;
+
+    &__icon {
+      display: none;
+    }
+
+    .navbar-wrapper {
+      width: 100%;
+    }
+
+    .navbar {
+      background-color: white;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 $padding-h;
+
+      @for $i from 5 through 8 {
+        li {
+          &:nth-child(#{$i}) {
+            display: none;
+          }
+        }
+      }
+
+      &__tweet {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+      }
+    }
+  }
+
+  .profile {
+    display: none;
   }
 }

@@ -18,7 +18,7 @@ import {
 const Navbar = () => {
   return (
     <div className="nav">
-      <div>
+      <div className="navbar-wrapper">
         <button className="btn nav__icon" href="#home">
           <img src={logo} alt="twitter-icon" />
         </button>
