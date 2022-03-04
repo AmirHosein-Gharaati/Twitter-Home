@@ -110,8 +110,9 @@
     margin-left: $margin-h/2;
 
     span {
-      font-size: 12px;
-      color: gray;
+      font-size: 14px;
+      color: $gray;
+      font-weight: 400;
     }
   }
 
