@@ -1,5 +1,10 @@
 .right-side {
-  background-color: red;
   width: calc(100% - $home-main-size);
   height: 100%;
+}
+
+@media screen and (max-width: $bp-x-small) {
+  .right-side {
+    width: 0;
+  }
 }
