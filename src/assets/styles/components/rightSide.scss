@@ -57,6 +57,11 @@
     border-radius: 20px;
     background-color: $gray-light;
     padding: $padding-v*2 $padding-h*2;
+
+    &__title {
+      font-size: 18px;
+      padding-bottom: $padding-v*2;
+    }
   }
 }
 
