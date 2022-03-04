@@ -131,7 +131,7 @@
     &__item {
       display: flex;
       align-items: center;
-      padding: $padding-v/2 $padding-h/2;
+      padding: $padding-v*2 $padding-h/2;
       min-height: 80px;
 
       &:hover {
