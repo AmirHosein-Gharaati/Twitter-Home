@@ -9,15 +9,28 @@ import {
   faCalendar,
   faMap,
 } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
-const AddPost = () => {
+const AddPost = ({ data, setData }) => {
+  const [value, setValue] = useState("");
+
+  const buttonClasses = () => {
+    let result = " add__button btn ";
+    if (!value) result += " btn-disabled ";
+    return result;
+  };
+
   return (
     <div className="add">
       <div className="add__profile">
         <img src={profileLogo} alt="profile" />
       </div>
       <div className="add__content">
-        <textarea placeholder="What's happening?" />
+        <textarea
+          value={value}
+          onChange={(e) => setValue(e.target.value)}
+          placeholder="What's happening?"
+        />
         <div className="add__line"></div>
         <div className="add__icons-wrapper">
           <div className="add__icons">
@@ -41,7 +54,7 @@ const AddPost = () => {
             </button>
           </div>
           <div className="add__button-wrapper">
-            <button className="add__button btn btn-disabled">Tweet</button>
+            <button className={buttonClasses()}>Tweet</button>
           </div>
         </div>
       </div>
