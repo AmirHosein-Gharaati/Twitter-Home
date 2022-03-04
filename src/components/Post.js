@@ -9,12 +9,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import profileLogo from "../assets/images/profile.png";
 
 const Post = ({
-  reasonFromPerson,
+  reasonFromPerson = "No One",
   reason = "",
-  personImage,
-  personName,
-  personId,
-  time,
+  personImage = { profileLogo },
+  personName = "No One",
+  personId = "@HICHKAS",
+  time = "now",
   text,
   imageUrl = "",
   replyCount = 0,

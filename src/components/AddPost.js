@@ -20,6 +20,17 @@ const AddPost = ({ data, setData }) => {
     return result;
   };
 
+  const addData = () => {
+    if (!value) return;
+
+    setData([
+      {
+        text: value,
+      },
+      ...data,
+    ]);
+  };
+
   return (
     <div className="add">
       <div className="add__profile">
@@ -54,7 +65,13 @@ const AddPost = ({ data, setData }) => {
             </button>
           </div>
           <div className="add__button-wrapper">
-            <button className={buttonClasses()}>Tweet</button>
+            <button
+              onClick={addData}
+              disabled={buttonClasses().includes("btn-disabled")}
+              className={buttonClasses()}
+            >
+              Tweet
+            </button>
           </div>
         </div>
       </div>

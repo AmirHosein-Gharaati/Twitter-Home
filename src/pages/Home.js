@@ -19,7 +19,7 @@ const Home = () => {
       </div>
 
       {/* Add post */}
-      <AddPost />
+      <AddPost data={data} setData={setData} />
 
       {data ? (
         data.map((post, postIndex) => {
