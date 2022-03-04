@@ -88,14 +88,11 @@ const Navbar = () => {
       </div>
 
       <div className="profile btn">
-        {/* image */}
         <img className="profile__logo" src={profileLogo} alt="logo" />
-        {/* Data */}
         <div className="profile__content">
           <h5>Amirhosein Ghara...</h5>
           <span>@AG_1380</span>
         </div>
-        {/* icon */}
         <img className="profile__dots" src={dots} alt="more" />
       </div>
     </div>
