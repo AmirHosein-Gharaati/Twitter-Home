@@ -2,11 +2,16 @@ import AddPost from "../components/AddPost";
 import Post from "../components/Post";
 import { REASONS } from "../helpers/enums";
 import profileLogo from "../assets/images/profile.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
   return (
     <div className="home">
-      <h3 className="home__title">Home</h3>
+      <div className="home__title-wrapper">
+        <h3 className="home__title">Home</h3>
+        <FontAwesomeIcon icon={faStar} />
+      </div>
 
       {/* Add post */}
       <AddPost />
