@@ -14,7 +14,7 @@
   min-width: $nav-bar-minimum;
 
   &__icon {
-    margin: 0;
+    margin: 0 !important;
     background-color: white;
     display: flex;
     align-items: center;
@@ -125,6 +125,7 @@
 @media screen and (max-width: $bp-medium) {
   .nav {
     width: $navbar-width-small;
+    align-items: center;
 
     .navbar {
       align-items: center;

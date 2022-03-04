@@ -9,6 +9,10 @@
   display: none !important;
 }
 
+.align-center {
+  align-items: center !important;
+}
+
 @media screen and(max-width: $bp-medium) {
   .main {
     margin-left: $navbar-width-small;
