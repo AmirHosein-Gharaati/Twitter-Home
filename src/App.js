@@ -48,20 +48,7 @@ function App() {
                     <span>IT nerd, Data miner, Social Researcher</span>
                   </div>
                 </div>
-
-                <div className="search__results__item">
-                  <div className="search__results__item__image">
-                    <img
-                      src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
-                      alt=""
-                    />
-                  </div>
-                  <div className="search__results__item__content">
-                    <h4>Mohsen Tahmasebi</h4>
-                    <span>@mohsen</span>
-                    <span>IT nerd, Data miner, Social Researcher</span>
-                  </div>
-                </div>
+                
               </div>
             </div>
           </div>
