@@ -45,6 +45,24 @@ function App() {
                 </div>
               </div>
 
+              <div className="right-side__item">
+                <div className="right-side__item__content">
+                  <span className="right-side__item__title">
+                    Ukraine conflict · LIVE
+                  </span>
+                  <p>
+                    UN Human Rights Council votes to investigate 'Russian
+                    aggression against Ukraine'
+                  </p>
+                </div>
+                <div className="right-side__item__image">
+                  <img
+                    src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+
             </div>
 
             {/* <div className="right-side__box">
