@@ -11,8 +11,6 @@
     padding: $padding-v 0;
   }
 
-  
-
   &__content {
     position: sticky;
     top: 100px;
@@ -106,6 +104,26 @@
     left: $padding-h * 2;
     top: 14px;
     color: $gray;
+  }
+
+  &__results {
+    position: absolute;
+    bottom: -100px;
+    left: -10px;
+    width: calc(100% + 20px);
+    min-height: 100px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    text-align: center;
+
+    span {
+      display: block;
+      padding-top: $padding-v*2;
+      font-size: 14px;
+      color: $gray;
+      font-weight: 400;
+    }
   }
 }
 

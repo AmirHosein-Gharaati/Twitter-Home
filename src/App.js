@@ -18,7 +18,9 @@ function App() {
             <div className="search">
               <input placeholder="Search Twitter" />
               <FontAwesomeIcon icon={faMagnifyingGlass} />
-              <div className="search__results"></div>
+              <div className="search__results">
+                <span>Try searching for people, topics, or keywords</span>
+              </div>
             </div>
           </div>
 
