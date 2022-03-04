@@ -7,6 +7,7 @@ function App() {
       <Navbar />
       <div className="main">
         <Home />
+        <div className="right-side"></div>
       </div>
     </div>
   );
