@@ -1,14 +1,21 @@
 .home {
   display: flex;
   flex-direction: column;
+  position: relative;
   border-right: 1px solid $white-gray;
-  padding: $padding-v * 4 0;
   width: 40%;
   min-width: 450px;
 
   &__title {
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
     font-weight: 600;
     font-size: 20px;
-    padding: 0 $padding-h;
+    padding: $padding-v $padding-h;
+    backdrop-filter: blur(10px);
   }
 }
