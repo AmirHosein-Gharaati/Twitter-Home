@@ -1,14 +1,13 @@
 .right-side {
   width: calc(100% - $home-main-size - 15%);
-  height: 100%;
   margin-left: $margin-h * 2;
 
   &__search-wrapper {
+    background-color: white;
     width: 100%;
     position: sticky;
     z-index: 10;
     top: 0;
-    backdrop-filter: blur(10px);
     padding: $padding-v 0;
   }
 
@@ -52,11 +51,16 @@
     }
   }
 
+  &__content {
+    position: sticky;
+    top: 100px;
+  }
+
   &__box {
     min-width: 100%;
     border-radius: 20px;
     background-color: $gray-light;
-    margin-bottom: $margin-v*2;
+    margin-bottom: $margin-v * 2;
 
     &__title {
       font-size: 18px;
@@ -68,11 +72,11 @@
     padding: $padding-v * 2 $padding-h * 2;
     display: flex;
     justify-content: space-between;
-    
-    &:last-child{
+
+    &:last-child {
       border-radius: 0 0 20px 20px;
     }
-    
+
     &:hover {
       background-color: $white-gray;
       cursor: pointer;
@@ -88,7 +92,7 @@
       color: $gray;
     }
 
-    p{
+    p {
       font-weight: 500;
       font-size: 14px;
     }
