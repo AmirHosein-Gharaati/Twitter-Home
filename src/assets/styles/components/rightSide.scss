@@ -115,8 +115,8 @@
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px;
-    
-    > span{
+
+    > span {
       text-align: center;
     }
 
@@ -137,6 +137,10 @@
       &:hover {
         background-color: $blue-light;
         cursor: pointer;
+      }
+
+      &:last-child {
+        border-radius: 0 0 10px 10px;
       }
 
       &__image {
