@@ -57,13 +57,10 @@
   }
 
   &__icons {
-    display: flex;
-    align-items: center;
+    @include center;
 
     button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include center;
       border-radius: 50%;
       margin: 0 $margin-h/4;
       width: 30px;

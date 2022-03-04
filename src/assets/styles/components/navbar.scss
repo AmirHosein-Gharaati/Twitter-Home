@@ -15,11 +15,9 @@
   z-index: 10;
 
   &__icon {
+    @include center;
     margin: 0 !important;
     background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 12px;
     border-radius: 50%;
 
@@ -73,6 +71,7 @@
     }
 
     &__tweet {
+      @include center;
       background-color: $blue;
       transition: all 0.3s ease;
       color: white;
@@ -81,10 +80,6 @@
       width: 216px;
       height: 50px;
       text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      
 
       &:hover {
         background-color: $blue-dark;
