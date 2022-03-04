@@ -1,10 +1,17 @@
 .right-side {
   width: calc(100% - $home-main-size);
   height: 100%;
+  background-color: rgb(255, 147, 147);
+
+  &__search {
+    padding: $padding-v * 2 $padding-h;
+    background-color: green;
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: $bp-x-small) {
   .right-side {
-    width: 0;
+    display: none;
   }
 }
