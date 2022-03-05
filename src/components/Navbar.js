@@ -25,59 +25,51 @@ const Navbar = () => {
 
         <nav className="navbar">
           <li>
-            <div className="navbar__item navbar__active btn">
-              <FontAwesomeIcon icon={faHome} />
-              <a href="#home">Home</a>
-            </div>
+            <a href="#home" className="navbar__item navbar__active btn">
+              <FontAwesomeIcon icon={faHome} /> Home
+            </a>
           </li>
 
           <li>
-            <div className="navbar__item btn">
-              <FontAwesomeIcon icon={faHashtag} />
-              <a href="#explore">explore</a>
-            </div>
+            <a href="#explore" className="navbar__item  btn">
+              <FontAwesomeIcon icon={faHashtag} /> explore
+            </a>
           </li>
 
           <li>
-            <div className="navbar__item btn">
-              <FontAwesomeIcon icon={faBell} />
-              <a href="#notifications">notifications</a>
-            </div>
+            <a href="#notifications" className="navbar__item  btn">
+              <FontAwesomeIcon icon={faBell} /> notifications
+            </a>
           </li>
 
           <li>
-            <div className="navbar__item btn">
-              <FontAwesomeIcon icon={faEnvelope} />
-              <a href="#messages">messages</a>
-            </div>
+            <a href="#messages" className="navbar__item  btn">
+              <FontAwesomeIcon icon={faEnvelope} /> messages
+            </a>
           </li>
 
           <li>
-            <div className="navbar__item btn">
-              <FontAwesomeIcon icon={faNoteSticky} />
-              <a href="#bookmarks">bookmarks</a>
-            </div>
+            <a href="#bookmarks" className="navbar__item  btn">
+              <FontAwesomeIcon icon={faNoteSticky} /> bookmarks
+            </a>
           </li>
 
           <li>
-            <div className="navbar__item btn">
-              <FontAwesomeIcon icon={faList} />
-              <a href="#lists">lists</a>
-            </div>
+            <a href="#lists" className="navbar__item  btn">
+              <FontAwesomeIcon icon={faList} /> lists
+            </a>
           </li>
 
           <li>
-            <div className="navbar__item btn">
-              <FontAwesomeIcon icon={faPerson} />
-              <a href="#profile">profile</a>
-            </div>
+            <a href="#profile" className="navbar__item  btn">
+              <FontAwesomeIcon icon={faPerson} /> profile
+            </a>
           </li>
 
           <li>
-            <div className="navbar__item btn">
-              <FontAwesomeIcon icon={faDotCircle} />
-              <a href="#more">more</a>
-            </div>
+            <a href="#more" className="navbar__item  btn">
+              <FontAwesomeIcon icon={faDotCircle} /> more
+            </a>
           </li>
 
           <button className="btn navbar__tweet">
