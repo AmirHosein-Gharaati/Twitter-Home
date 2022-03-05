@@ -41,8 +41,23 @@
     }
   }
 
+  &__line-wrapper {
+    display: block;
+
+    button {
+      color: $blue;
+      background-color: transparent;
+      &:hover {
+        background-color: $blue-light;
+      }
+
+      svg {
+        margin-right: $margin-v;
+      }
+    }
+  }
+
   &__line {
-    display: none;
     width: 100%;
     min-width: 200px;
     height: 1px;

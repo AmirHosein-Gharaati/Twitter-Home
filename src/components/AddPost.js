@@ -8,6 +8,7 @@ import {
   faSmile,
   faCalendar,
   faMap,
+  faEarth,
 } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
@@ -42,7 +43,13 @@ const AddPost = ({ data, setData }) => {
           onChange={(e) => setValue(e.target.value)}
           placeholder="What's happening?"
         />
-        <div className="add__line"></div>
+        <div className="add__line-wrapper">
+          <button className="btn">
+            <FontAwesomeIcon icon={faEarth} />
+            <span>Everyone can reply</span>
+          </button>
+          <div className="add__line"></div>
+        </div>
         <div className="add__icons-wrapper">
           <div className="add__icons">
             <button className="btn">
