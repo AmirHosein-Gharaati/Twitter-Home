@@ -35,22 +35,21 @@
     display: flex;
     flex-direction: column;
 
-    a {
-      font-weight: 400;
-      font-size: 18px;
-      transition: all 0.3s ease;
-      text-transform: capitalize;
-    }
-
     &__item {
       display: flex;
       align-items: center;
       margin: $margin-v/2 0;
       padding: $padding-v * 1.5 $padding-h;
-      width: 100%;
+      font-weight: 400;
+      font-size: 18px;
+      transition: all 0.3s ease;
+      text-transform: capitalize;
+
+      &__text {
+        margin-left: $margin-h;
+      }
 
       svg {
-        margin-right: $margin-h;
         width: 25px;
         height: 25px;
         color: gray;
@@ -130,7 +129,7 @@
       align-items: center;
 
       &__item {
-        a {
+        &__text {
           display: none;
         }
       }
