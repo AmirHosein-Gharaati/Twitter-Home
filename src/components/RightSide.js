@@ -1,4 +1,7 @@
-import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMagnifyingGlass,
+  faXmarkCircle,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useEffect, useState } from "react";
 import SearchResult from "./SearchResult";
@@ -26,6 +29,10 @@ const RightSide = ({ dummyData }) => {
     return false;
   };
 
+  const clearInput = () => {
+    setSearchInput("");
+  };
+
   useEffect(() => {
     let res = [];
     for (const post of data) {
@@ -51,7 +58,15 @@ const RightSide = ({ dummyData }) => {
             onChange={(e) => setSearchInput(e.target.value)}
             placeholder="Search Twitter"
           />
-          <FontAwesomeIcon icon={faMagnifyingGlass} />
+          <FontAwesomeIcon
+            className="search__magnify"
+            icon={faMagnifyingGlass}
+          />
+          <FontAwesomeIcon
+            onClick={clearInput}
+            className="search__clear"
+            icon={faXmarkCircle}
+          />
           <div className="search__results">
             <span>
               {serachInput ? (results.length ? "" : notFoundText) : defaultText}
