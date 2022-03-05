@@ -10,7 +10,10 @@ function App() {
   const [ready, setReady] = useState(false);
 
   document.onreadystatechange = () => {
-    setReady(!ready);
+    // Used timeout to just show animation
+    setTimeout(() => {
+      setReady(!ready);
+    }, 1000);
   };
 
   return !ready ? (
