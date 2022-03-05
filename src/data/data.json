@@ -6,7 +6,7 @@
     "personName": "Bill Gates",
     "personId": "@billy",
     "time": "11h",
-    "text": "This is a sample text for a post. And i don't know what to say",
+    "text": "This is a sample #hashtag text for a post. And i #hashtag don't know what to say",
     "imageUrl": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
     "replyCount": 10,
     "likeCount": 12,
@@ -19,7 +19,7 @@
     "personName": "Mohammad Hosein Farshad",
     "personId": "@Farshhhh",
     "time": "11h",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin laoreet felis quis orci semper egestas. Nulla purus eros, varius id neque sit amet, varius eleifend arcu. Curabitur sit amet bibendum quam, nec sagittis mauris. Duis ultricies enim nec nibh facilisis interdum. Ut lobortis, ex in ultrices volutpat, nulla ligula pulvinar quam, vel aliquet dui lorem quis sapien.",
+    "text": "Lorem ipsum dolor sit amet, @mohammad consectetur adipiscing elit. Proin laoreet felis quis orci semper egestas. Nulla purus eros, varius id neque sit amet, varius eleifend arcu. Curabitur sit amet bibendum quam, nec sagittis mauris. Duis ultricies enim nec nibh facilisis interdum. Ut lobortis, ex in ultrices volutpat, nulla ligula pulvinar quam, vel aliquet dui lorem quis sapien.",
     "replyCount": 10,
     "retweetCount": 127
   },

@@ -23,6 +23,13 @@ const Post = ({
   shareCount = 0,
   hasComment = false,
 }) => {
+  const hasHashtagOrMention = (word) => {
+    if (word.startsWith("@") || word.startsWith("#")) {
+      return true;
+    }
+    return false;
+  };
+
   return (
     <div className="post">
       <div className="post-wrapper">
@@ -57,7 +64,17 @@ const Post = ({
             </div>
 
             <div className="post__text">
-              <p>{text}</p>
+              <p>
+                {text.split(" ").map((word, wordIndex) => {
+                  return hasHashtagOrMention(word) ? (
+                    <a key={wordIndex} href={word}>
+                      {word + " "}
+                    </a>
+                  ) : (
+                    word + " "
+                  );
+                })}
+              </p>
             </div>
 
             {imageUrl !== "" && (
