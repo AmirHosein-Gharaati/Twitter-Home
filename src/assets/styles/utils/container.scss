@@ -18,13 +18,13 @@
 }
 
 @media screen and(max-width: $bp-medium) {
-  .main {
+  #main {
     margin-left: $navbar-width-small;
   }
 }
 
 @media screen and (max-width: $bp-x-small) {
-  .main {
+  #main {
     margin-left: 0;
   }
 }
