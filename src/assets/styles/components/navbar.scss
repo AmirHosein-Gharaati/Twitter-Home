@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: flex-end;
   height: 100vh;
-  padding: $padding-v $padding-h * 2;
+  padding: $padding-v/2 $padding-h * 2;
   overflow-y: auto;
   position: fixed;
   left: 0;
@@ -18,7 +18,7 @@
     @include center;
     margin: 0 !important;
     background-color: white;
-    padding: 12px;
+    padding: $padding-h;
     border-radius: $border-radius-circular;
 
     &:hover {
