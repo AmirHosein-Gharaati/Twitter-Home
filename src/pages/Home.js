@@ -12,7 +12,7 @@ const Home = ({dummyData}) => {
     <div className="home">
       <div className="home__title-wrapper">
         <h3 className="home__title">Home</h3>
-        <FontAwesomeIcon icon={faStar} />
+        <FontAwesomeIcon className="btn" icon={faStar} />
       </div>
 
       {/* Add post */}
