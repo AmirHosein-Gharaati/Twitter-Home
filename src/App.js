@@ -14,6 +14,8 @@ function App() {
   };
 
   return !ready ? (
+    <LoadingPage />
+  ) : (
     <div>
       <Navbar />
       <div id="main">
@@ -21,8 +23,6 @@ function App() {
         <RightSide dummyData={dummyData} />
       </div>
     </div>
-  ) : (
-    <LoadingPage />
   );
 }
 

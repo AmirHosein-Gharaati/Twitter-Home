@@ -1,0 +1,9 @@
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height: 100vh !important;
+  max-width: $bp-medium/4;
+  min-width: $bp-x-small/4;
+}

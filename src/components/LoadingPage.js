@@ -15,7 +15,7 @@ const LoadingPage = () => {
     return () => Lottie.stop();
   }, []);
 
-  return <div className="center" ref={anime}></div>;
+  return <div className="loading" ref={anime}></div>;
 };
 
 export default LoadingPage;
