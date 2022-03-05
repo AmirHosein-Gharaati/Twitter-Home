@@ -134,3 +134,10 @@
     }
   }
 }
+
+
+@media screen and(max-width: $bp-x-small) {
+  .add{
+    display: none;
+  }
+}
