@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div className="main">
+      <div id="main">
         <Home dummyData={dummyData} />
         <RightSide dummyData={dummyData}/>
       </div>
