@@ -2,15 +2,6 @@
   width: calc(100% - $home-main-size - 15%);
   margin-left: $margin-h * 2;
 
-  &__search-wrapper {
-    background-color: white;
-    width: 100%;
-    position: sticky;
-    z-index: 10;
-    top: 0;
-    padding: $padding-v 0;
-  }
-
   &__content {
     position: sticky;
     top: 100px;
@@ -67,8 +58,20 @@
   }
 }
 
+.search-wrapper {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: $right-side-top-header;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+}
+
 .search {
   position: relative;
+  width: 100%;
 
   input {
     width: 100%;

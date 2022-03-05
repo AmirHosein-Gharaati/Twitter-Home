@@ -44,7 +44,7 @@ const RightSide = ({ dummyData }) => {
 
   return (
     <div className="right-side">
-      <div className="right-side__search-wrapper">
+      <div className="search-wrapper">
         <div className="search">
           <input
             value={serachInput}
