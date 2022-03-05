@@ -19,7 +19,7 @@
     margin: 0 !important;
     background-color: white;
     padding: 12px;
-    border-radius: 50%;
+    border-radius: $border-radius-circular;
 
     &:hover {
       background-color: $blue-light;
@@ -99,7 +99,7 @@
   &__logo {
     width: 40px;
     height: 40px;
-    border-radius: 30px;
+    border-radius: $border-radius-medium;
   }
 
   &__content {
