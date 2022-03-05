@@ -18,7 +18,7 @@
 
   &__box {
     min-width: 100%;
-    border-radius: 20px;
+    border-radius: $border-radius-normal;
     background-color: $gray-light;
     margin-bottom: $margin-v * 2;
 
@@ -34,7 +34,7 @@
     justify-content: space-between;
 
     &:last-child {
-      border-radius: 0 0 20px 20px;
+      border-radius: 0 0 $border-radius-normal $border-radius-normal;
     }
 
     &:hover {
@@ -61,7 +61,7 @@
       img {
         width: 60px;
         height: 60px;
-        border-radius: 10px;
+        border-radius: $border-radius-small;
       }
     }
   }
@@ -73,7 +73,7 @@
   input {
     width: 100%;
     height: 44px;
-    border-radius: 25px;
+    border-radius: $border-radius-medium;
     display: flex;
     align-items: center;
     background-color: $white-gray;
@@ -121,7 +121,7 @@
     overflow-y: auto;
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 10px;
+    border-radius: $border-radius-small;
 
     > span {
       text-align: center;
@@ -147,7 +147,7 @@
       }
 
       &:last-child {
-        border-radius: 0 0 10px 10px;
+        border-radius: 0 0 $border-radius-small $border-radius-small;
       }
 
       &__image {
@@ -157,7 +157,7 @@
         img {
           width: 60px;
           height: 60px;
-          border-radius: 50%;
+          border-radius: $border-radius-circular;
         }
       }
 
