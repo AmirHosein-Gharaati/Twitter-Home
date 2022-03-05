@@ -29,10 +29,6 @@ const RightSide = ({ dummyData }) => {
     return false;
   };
 
-  const clearInput = () => {
-    setSearchInput("");
-  };
-
   useEffect(() => {
     let res = [];
     for (const post of data) {
@@ -63,7 +59,7 @@ const RightSide = ({ dummyData }) => {
             icon={faMagnifyingGlass}
           />
           <FontAwesomeIcon
-            onClick={clearInput}
+            onClick={() => setSearchInput("")}
             className="search__clear"
             icon={faXmarkCircle}
           />
