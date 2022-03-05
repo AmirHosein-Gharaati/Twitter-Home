@@ -15,7 +15,6 @@ const Home = ({dummyData}) => {
         <FontAwesomeIcon className="btn" icon={faStar} />
       </div>
 
-      {/* Add post */}
       <AddPost data={data} setData={setData} />
 
       {data ? (
