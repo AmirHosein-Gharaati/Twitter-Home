@@ -1,11 +1,8 @@
 .right-side {
   width: calc(100% - $home-main-size - 15%);
   margin-left: $margin-h * 2;
-
-  &__content {
-    position: sticky;
-    top: 100px;
-  }
+  position: sticky ;
+  top: -400px;
 
   &__box {
     min-width: 100%;
